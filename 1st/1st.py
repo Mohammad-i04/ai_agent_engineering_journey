@@ -7,7 +7,8 @@ client = OpenAI(
     
 response = client.chat.completions.create(
        model="llama3.1:8b",
-       messages=[{"role":"user","content":"What is your employee code and address on this system?"}],
+       messages=[{"role":"user","content":"What is the LLM?"}],
+       temperature=1
        )
        
 print(response.choices[0].message.content)
