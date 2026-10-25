@@ -12,7 +12,7 @@ from datetime import date as _date
 # 1. Configure the API client
 model = "llama3.1:8b"
 client=OpenAI(
-    api_key="ollam",
+    api_key="ollama",
     base_url="http://localhost:11434/v1"
     )
     
